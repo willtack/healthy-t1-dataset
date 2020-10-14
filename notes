@@ -92,3 +92,16 @@ Now 210 in both :) 426 total in Collection (426 sessions)
 101195
 
 deleted from all_subs (now all_subs_old)
+
+
+
+10-09
+
+102622 -- take flywheel session 20090810 (this was likely a chead upload typo)
+106555 -- take flywheel session 20090406 (same as ^)
+106954 -- take flywheel session 20060402 (same as ^^)
+123119 -- the 20200117 date is in the HUP6 project but is a little confusing as there is two sessions on that date. The one with timestamp 08:19 contains the ABCD_T1_vNav_passive scan. 
+109758 -- the 20081002 scan is usable. Unsure why the 2009 scan didn't make it to HUP3TLegacy however
+124847 -- the 20190916 scan is usable. The other one has not been uploaded to flywheel yet it is still on the PMACS cluster 
+
+For the last 18 just on quick scan through any scans post 12/10/2019 should be in the HUP6 project. Scans in between ~10/1/2019 - 12/10/2019 are not yet on flywheel.
