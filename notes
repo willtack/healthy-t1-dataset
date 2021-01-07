@@ -105,3 +105,64 @@ deleted from all_subs (now all_subs_old)
 124847 -- the 20190916 scan is usable. The other one has not been uploaded to flywheel yet it is still on the PMACS cluster 
 
 For the last 18 just on quick scan through any scans post 12/10/2019 should be in the HUP6 project. Scans in between ~10/1/2019 - 12/10/2019 are not yet on flywheel.
+
+10-15
+removed 111768x02x20200116x3T from collection. T1 looked odd and already had 111768x01. 111768x02 was not in spreadsheet.
+
+10-20
+TOME_3044 occurs twice in spreadsheet, but there's no 3043. One is 25, one is 36. Asked Ozzy.
+
+10-21
+removed 102439x01 from collection bc not in spreadsheet
+
+10-22
+-deleted C21_20171009_1 (PHARMA) from Collection and spreadsheet because bad image. added in C21_20171016_4
+-Added C03_20150204 from CBFLOW to collection
+-Kept C05_20150304 in collection (as opposed to C05_20150225) because they're same subject and image quality is slightly better. Made same change in spreadsheet.
+-Kept C07_20150402 in collection (as opposed to C05_20150327) because they're same subject and image quality is better. Made same change in spreadsheet.
+-Removed C09_20150506 from collection. Added C09_20150429 to collection because they're the same subject and image quality is better. Kept entry in spreadsheet.
+-C15_20150722 and C15_20150729 same quality. Kept C15_20150729 in collection. removed spreadsheet entry for C15_20150722.
+-C04_20150819 and C04_20150826 same quality. Kept C04_20150826 in collection. removed spreadsheet entry for C04_20150819.
+-Kept C05_20150826 in collection (as opposed to C05_20150826) because they're same subject and image quality is better. Made same change in spreadsheet.
+-Kept C09_20150918 in collection (as opposed to C09_20150911) because they're same subject and image quality is better. Made same change in spreadsheet.
+-C11_20150930 and C11_20150923 same quality. Kept C11_20150930 in collection. removed spreadsheet entry for C11_20150923.
+-Added C07_20161031_3 from PHARMA to collection
+-C13_20151012 and C13_20151005 same quality. Kept C13_20151012 in collection. Removed spreadsheet entry for C13_20151005.
+-Removed C12_20151008 from collection. Added C12_20151001 to collection because they're the same subject and image quality is better. Kept entry in spreadsheet.
+-Kept C19_20160308 in collection (as opposed to C19_20160301) because they're same subject and image quality is better. Made same change in spreadsheet.
+
+
+
+Removed C07_20161024 (PHARMA) and C03_20150211 (CBFLOW) from collection, because the corresponding subjects had two sessions in the collection. (See notebook for details)
+
+
+10-23
+Added 125678 2019-12-17 14:09 to collection.
+Added 125677 2019-12-17 09:46 to collection.
+Added 125277 2020-01-30 10:20 to collection.
+Added 123119 2020-01-17 14:59 to collection.
+Added 108783.10 20050816-0748 to collection.
+Added 107837.10 20121019-1306 to collection.
+Added 125781 2019-12-20 10:52 to collection. 
+Added 125333 2020-01-13 11:01 to collection.
+Added 111275_01 111275x01x20161110x3T to collection. 
+
+Deleted 100979's ratings from spreadsheet. Not in collections or project.
+
+Removed 123119, 2020-01-17 08:18 from collection.
+
+10-26
+deleted 105114 QC from spreadsheet. not in collection or project
+deleted 106069 QC from spreadsheet. not in collection or project
+deleted 109177 QC from spreadsheet. not in collection or project
+deleted 112002 QC from spreadsheet. not in collection, no acquisitions
+deleted 114783 QC from spreadsheet. not in collection, no acquisitions
+
+removed 118440 (NACC) from collection. (QC1)
+removed 119493 (NACC) from collection. (QC1)
+removed 113066_02 (NACC) from collection. (QC1)
+removed 124386 (FTDC) from collection. (QC1)
+
+10-27
+removed 104793_01 from spreadsheet. (No 3T session)
+
