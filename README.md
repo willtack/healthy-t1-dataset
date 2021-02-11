@@ -7,7 +7,7 @@ The data were gathered into a Flywheel Collection and visually inspected for mot
 
 Visualization of the age distribution:
 
-![Age distribution](https://raw.githubusercontent.com/willtack/healthy-t1-dataset/master/data_collection/age_distribution.svg)
+![Age distribution](https://raw.githubusercontent.com/willtack/healthy-t1-dataset/master/data_collection/age_distribution.png)
 
 Breakdown of contributions by group, calculated using [code/accounting.ipynb](https://github.com/willtack/healthy-t1-dataset/blob/master/code/accounting.ipynb):
 
