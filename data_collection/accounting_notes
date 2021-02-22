@@ -170,5 +170,8 @@ removed 104793_01 from spreadsheet. (No 3T session)
 manually ran ANTS-CT for session 125415x20190913x3T because script picking up wrong nifti file, due to an extraneous suffix (....a.nii.gz)
 
 02-11
-manually ran ANTS-CT for session 20190430-1259 (125415) because it dicom had not been converted at time of original scripted run. (also added to collection)
+manually ran ANTS-CT for session 20190430-1259 (124249) because it dicom had not been converted at time of original scripted run. (also added to collection)
+
+02-18-2021
+124226/20190128-1424 deleted by someone else. Will re-upload analysis to new session and add new session to collection.
 
