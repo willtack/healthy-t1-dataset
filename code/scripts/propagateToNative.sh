@@ -6,7 +6,7 @@
 #
 templateDir=/home/will/.templateflow
 atlasPath=${templateDir}/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-01_atlas-Schaefer2018_desc-200Parcels17Networks_dseg.nii.gz
-outputParentDir=/media/will/My\ Passport/Ubuntu/cortical_thickness_maps/ct
+outputParentDir=/media/will/My\ Passport/Ubuntu/cortical_thickness_maps/segmentations
 
 
 error_exit()
