@@ -6,8 +6,9 @@
 #
 templateDir=/home/will/.templateflow
 atlasPath=${templateDir}/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-01_atlas-Schaefer2018_desc-200Parcels17Networks_dseg.nii.gz
+ctDir=/media/will/My\ Passport/Ubuntu/cortical_thickness_maps/ct
 outputParentDir=/media/will/My\ Passport/Ubuntu/cortical_thickness_maps/segmentations
-
+ANTSPATH=/usr/local/ANTs/bin
 
 error_exit()
 {
@@ -49,12 +50,21 @@ propagateCorticalLabelsToNativeSpace ()
     rm -rf "${tmpLabels}"
 }
 
-for subjectDir in "${outputParentDir}"/TOMEx3001; do
+for subjectDir in "${ctDir}"/*; do #loop through subject folders in already-existing ct folder
     subjectName=$(basename "${subjectDir}")
     echo "Propagating Labels for ${subjectName}..."
+    subjectSegDir="${outputParentDir}"/${subjectName}
+    if [ -d "${subjectSegDir}" ]; then
+        echo "   (Already processed ${subjectSegDir})"
+        continue
+    else
+        mkdir -p "${subjectSegDir}" # make a segmentations/subject folder
+    fi
+    # locate necessary files in original subject folder
     corticalMask=$(find "${subjectDir}" -type f | grep CorticalMask)
     extractedBrain=$(find "${subjectDir}" -type f | grep ExtractedBrain)
     affineMatrix=$(find "${subjectDir}" -type f | grep GenericAffine)
     warpFile=$(find "${subjectDir}" -type f | grep Warp)
-    propagateCorticalLabelsToNativeSpace "${corticalMask}" "${atlasPath}" "${subjectDir}" "Schaefer2018_2018Parcels_17Networks" "${extractedBrain}" "${affineMatrix}" "${warpFile}"
+    # run the command
+    propagateCorticalLabelsToNativeSpace "${corticalMask}" "${atlasPath}" "${subjectSegDir}" "Schaefer2018_2018Parcels_17Networks" "${extractedBrain}" "${affineMatrix}" "${warpFile}"
 done
