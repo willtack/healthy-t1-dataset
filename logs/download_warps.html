@@ -13115,7 +13115,7 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">flywheel</span>
@@ -13152,7 +13152,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">download_warps</span><span class="p">(</span><span class="n">session</span><span class="p">,</span> <span class="n">passed</span><span class="p">,</span> <span class="n">failed</span><span class="p">,</span> <span class="n">double</span><span class="p">):</span>
@@ -13166,7 +13166,7 @@ div#notebook {
 <span class="sd">    </span>
 <span class="sd">    &#39;&#39;&#39;</span>
     
-    <span class="c1"># Cleaning up subject and session names to </span>
+    <span class="c1"># cleaning up subject and session names  </span>
     <span class="n">sub_label</span> <span class="o">=</span> <span class="n">fw</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">session</span><span class="o">.</span><span class="n">parents</span><span class="p">[</span><span class="s1">&#39;subject&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">label</span>
     <span class="k">if</span> <span class="s1">&#39;_&#39;</span> <span class="ow">in</span> <span class="n">sub_label</span><span class="p">:</span>
         <span class="n">sub_label</span> <span class="o">=</span> <span class="n">sub_label</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">,</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
@@ -15833,7 +15833,7 @@ Downloading 118458&#39;s 20140929-1347 files to /media/will/My Passport/Ubuntu/c
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Check (again) how many subjects have complete downloads</span>
@@ -15843,9 +15843,9 @@ Downloading 118458&#39;s 20140929-1347 files to /media/will/My Passport/Ubuntu/c
 <span class="k">for</span> <span class="n">subdir</span> <span class="ow">in</span> <span class="n">subdirs</span><span class="p">:</span>
     <span class="n">n_files</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">subdir</span><span class="p">))</span>
     <span class="k">if</span> <span class="n">n_files</span> <span class="o">&gt;=</span> <span class="mi">6</span><span class="p">:</span>
-        <span class="n">complete</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">subdir</span><span class="p">)</span>
+        <span class="n">complete2</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">subdir</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="n">incomplete</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">subdir</span><span class="p">)</span>
+        <span class="n">incomplete2</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">subdir</span><span class="p">)</span>
         
 <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">complete2</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">incomplete2</span><span class="p">))</span>
@@ -15865,8 +15865,8 @@ Downloading 118458&#39;s 20140929-1347 files to /media/will/My Passport/Ubuntu/c
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>863
-5
+<pre>867
+1
 </pre>
 </div>
 </div>
@@ -15878,7 +15878,79 @@ Downloading 118458&#39;s 20140929-1347 files to /media/will/My Passport/Ubuntu/c
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>An example of looking through the zip file</p>
+<p>Try the final session, 1222702:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">passed3</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+<span class="n">failed3</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+<span class="n">missed_session</span> <span class="o">=</span> <span class="n">fw</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;5d049ac5a550c60048704d67&#39;</span><span class="p">)</span>
+<span class="n">passed3</span><span class="p">,</span> <span class="n">failed3</span> <span class="o">=</span> <span class="n">download_warps</span><span class="p">(</span><span class="n">missed_session</span><span class="p">,</span> <span class="n">passed3</span><span class="p">,</span> <span class="n">failed3</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">passed3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">failed3</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Already downloaded 6 files for 122702.
+1
+0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Check (again) how many subjects have complete downloads</span>
+<span class="n">complete3</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">incomplete3</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">subdirs</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">,</span> <span class="p">[</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">local_dir</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">local_dir</span><span class="p">)]))</span>
+<span class="k">for</span> <span class="n">subdir</span> <span class="ow">in</span> <span class="n">subdirs</span><span class="p">:</span>
+    <span class="n">n_files</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">subdir</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">n_files</span> <span class="o">&gt;=</span> <span class="mi">6</span><span class="p">:</span>
+        <span class="n">complete3</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">subdir</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">incomplete3</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">subdir</span><span class="p">)</span>
+        
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">complete3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">incomplete3</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+<p>An example of looking through the zip file:</p>
 
 </div>
 </div>
