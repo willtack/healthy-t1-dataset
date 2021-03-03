@@ -1,4 +1,4 @@
 .git
 .ipynb_checkpoints
 code/generate_regional_masks.ipynb
-
+code/scripts/transfer.sh
