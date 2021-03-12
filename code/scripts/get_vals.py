@@ -23,7 +23,6 @@ def get_vals(label_idx_file, label_img_file, outcome_file):
     
     '''
     
-    
     labs_df = pd.read_csv(label_idx_file) # read in label index file
     header_list = list(labs_df) # get names of columns already in dataframe
     summvar = ['mean', 'std', 'min','25%','50%','75%', 'max'] # order is CRUCIAL and dependent on order of pandas df.describe()
@@ -48,9 +47,8 @@ def get_vals(label_idx_file, label_img_file, outcome_file):
             labs_df.loc[i,summvar] = desc_list
             labs_df["volume"][i] = voxvol * len(w)
         
-        print("{} {} ".format(labs_df["label_number"][i], labs_df["volume"][i]))
+#         print("{} {} ".format(labs_df["label_number"][i], labs_df["volume"][i]))
     
-
     # Round summary metrics
     for v in summvar:
         labs_df.loc[:, v] = round(labs_df.loc[:,v], nround)
@@ -63,7 +61,8 @@ def get_vals(label_idx_file, label_img_file, outcome_file):
 
 
 
-local_dir = '/media/will/My Passport/Ubuntu/cortical_thickness_maps/ct'
+# local_dir = '/media/will/My Passport/Ubuntu/cortical_thickness_maps/ct'
+local_dir = '/home/will/Projects/healthy-t1-dataset/test_sub'
 label_idx_file = '/home/will/Projects/healthy-t1-dataset/labels/Schaefer2018_200Parcels_17Networks_order.csv'
 
 # Loop through subject directories
@@ -73,5 +72,5 @@ for subject in os.listdir(local_dir):
     label_img_file = glob.glob(subdir+'/*Schaefer2018*')[0] # glob returns a list
     outcome_file = glob.glob(subdir+'/*CorticalThickness.nii.gz')[0] 
     dataframe = get_vals(label_idx_file, label_img_file, outcome_file)
-    dataframe.to_csv(os.path.join(subdir, "sub-"+subject+"_"+"schaefer.csv"))
+    dataframe.to_csv(os.path.join(subdir, "sub-"+subject+"_"+"schaefer.csv"), index=False)
     
