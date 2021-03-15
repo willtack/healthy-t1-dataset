@@ -45,19 +45,9 @@ def RSE(y_true, y_predicted):
     rse=math.sqrt(RSS / (len(y_true)-2))
     return rse
 
-
-#loop through each label and plug data into linear model
-tmpB1=pd.DataFrame()
-for ind in range(0,len(wblabs)):
-  i=wblabs[ind]
-  tmplabs=temp_vals[temp_vals['label_number'] == i]
-  df=pd.DataFrame(tmplabs.value)
-  df=pd.concat([df.reset_index(drop=True), age_vals], axis=1)
-
 #loop through each label and plug data into linear model
 from sklearn.linear_model import LinearRegression
 
-tmpB1=pd.DataFrame()
 int_coff=[]
 target_coff=[]
 rse=[]
