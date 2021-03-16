@@ -1,0 +1,6 @@
+QC evaluations, which can be found in healthy-t1-dataset/metadata.csv, follow these critera:
+  3 - perfect
+  2 - usable
+  1 - unusable
+  
+  and are scored for the presence of motion and artifact (1 meaning present and 0 meaning not present).
