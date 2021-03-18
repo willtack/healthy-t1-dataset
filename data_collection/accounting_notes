@@ -182,3 +182,7 @@ manually ran ANTS-CT for session 20190430-1259 (124249) because it dicom had not
 removed 122702 7T session from Flywheel
 added 122702 3T session. will have to re-run ANTs-CT
 
+03-18-2021
+added 124266/20190128-1424 from HUP6 project to collection. Now 868 scans in collection. 
+(Previous iteration of session already downloaded so does not affect w-score calculation.)
+Still need to upload the previous analysis output.
