@@ -46,6 +46,10 @@ def get_vals(label_idx_file, label_img_file, outcome_file):
             desc_list = desc[0].to_list()[1:] # omit 'count' field
             labs_df.loc[i,summvar] = desc_list
             labs_df["volume"][i] = voxvol * len(w)
+        else:
+            # pad with 0s
+            labs_df.loca[i,summvar] = [0]*len(summvar)
+            labs_df["volume"][i] = 0
         
 #         print("{} {} ".format(labs_df["label_number"][i], labs_df["volume"][i]))
     
