@@ -187,3 +187,7 @@ added 124266/20190128-1424 from HUP6 project to collection. Now 868 scans in col
 (Previous iteration of session already downloaded so does not affect w-score calculation.)
 Still need to upload the previous analysis output.
 
+03-31-2021
+I discovered that there were 866 sessions instead of 868.
+FTDC {'106555', '110445.05'}
+
