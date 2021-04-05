@@ -182,3 +182,6 @@ manually ran ANTS-CT for session 20190430-1259 (124249) because it dicom had not
 removed 122702 7T session from Flywheel
 added 122702 3T session. will have to re-run ANTs-CT
 
+03-31-2021
+I discovered that there were 866 sessions instead of 868.
+FTDC {'106555', '110445.05'}
