@@ -1,4 +1,4 @@
-6-15
+6-15-2020
 
 CBFLOW
 32 in Flywheel collection, 33 listed.
@@ -19,7 +19,7 @@ presurgicalEpilepsy
 12 in Flywheel collection, 12 in project, 16 listed.
 Uploaded 4 (1,2,3,16) to project. Added to Collection.
 
-6-16
+6-16-2020
 NACC-SC 
 214 in sheet, 
 Deleted two from sheet because not in project:102439_01, 111768_02
@@ -30,7 +30,7 @@ Added those to Collection.
 Compared those in collection with those in sheet for differences.
 Deleted extras from sheet. (Kept in separate sheet for records)
 
-6-17:
+6-17-2020:
 Problem: tags were added to just one session per subject (good). but sometimes that session was one that did not have an MPRAGE
 Removed tags.
 Wrote loop to add tag to the right sessions:
@@ -52,7 +52,7 @@ loop through control_data (list), list the sessions for that subject. if a sessi
 But first, test. add sessions to list
 
 
-6-23
+6-23-2020
 124018 - missing from project
 124824 - missing from project
 125107 - different T1 acquisition
@@ -61,17 +61,17 @@ But first, test. add sessions to list
 125901- ""
 125944- ""
 
-6-25
+6-25-2020
 Added by hand 242 sessions to collection
 32 are duplicates, making 210 total. (Originally 214 normals in sheet provided to me. 4 were not found in the project. See top of 6-23 and 6-16)
 Need to remove those but the Remove From Collection button missing. Put in a ticket.
 
 
-6-28
+6-28-2020
 duplicates:
 ['117375', '114000', '111487', '111965', '114787', '115587', '116630', '118317', '118700', '118711', '118724', '118775', '118998', '119254', '119989', '101066', '106036', '106615', '114699', '115050', '117158', '117326', '117358', '118390', '118418', '119473', '119582', '122025', '122027', '122039', '122328', '125070']
 
-6-29
+6-29-2020
 listed: 211
 collection: 209
 
@@ -84,7 +84,7 @@ Now 210 in both :) 426 total in Collection (426 sessions)
 
 
 
-9-24
+9-24-2020
 
 100836
 101066
@@ -95,7 +95,7 @@ deleted from all_subs (now all_subs_old)
 
 
 
-10-09
+10-09-2020
 
 102622 -- take flywheel session 20090810 (this was likely a chead upload typo)
 106555 -- take flywheel session 20090406 (same as ^)
@@ -106,16 +106,16 @@ deleted from all_subs (now all_subs_old)
 
 For the last 18 just on quick scan through any scans post 12/10/2019 should be in the HUP6 project. Scans in between ~10/1/2019 - 12/10/2019 are not yet on flywheel.
 
-10-15
+10-15-2020
 removed 111768x02x20200116x3T from collection. T1 looked odd and already had 111768x01. 111768x02 was not in spreadsheet.
 
-10-20
+10-20-2020
 TOME_3044 occurs twice in spreadsheet, but there's no 3043. One is 25, one is 36. Asked Ozzy.
 
-10-21
+10-21-2020
 removed 102439x01 from collection bc not in spreadsheet
 
-10-22
+10-22-2020
 -deleted C21_20171009_1 (PHARMA) from Collection and spreadsheet because bad image. added in C21_20171016_4
 -Added C03_20150204 from CBFLOW to collection
 -Kept C05_20150304 in collection (as opposed to C05_20150225) because they're same subject and image quality is slightly better. Made same change in spreadsheet.
@@ -136,7 +136,7 @@ removed 102439x01 from collection bc not in spreadsheet
 Removed C07_20161024 (PHARMA) and C03_20150211 (CBFLOW) from collection, because the corresponding subjects had two sessions in the collection. (See notebook for details)
 
 
-10-23
+10-23-2020
 Added 125678 2019-12-17 14:09 to collection.
 Added 125677 2019-12-17 09:46 to collection.
 Added 125277 2020-01-30 10:20 to collection.
@@ -151,7 +151,7 @@ Deleted 100979's ratings from spreadsheet. Not in collections or project.
 
 Removed 123119, 2020-01-17 08:18 from collection.
 
-10-26
+10-26-2020
 deleted 105114 QC from spreadsheet. not in collection or project
 deleted 106069 QC from spreadsheet. not in collection or project
 deleted 109177 QC from spreadsheet. not in collection or project
@@ -163,13 +163,13 @@ removed 119493 (NACC) from collection. (QC1)
 removed 113066_02 (NACC) from collection. (QC1)
 removed 124386 (FTDC) from collection. (QC1)
 
-10-27
+10-27-2020
 removed 104793_01 from spreadsheet. (No 3T session)
 
-01-08 
+01-08-2021 
 manually ran ANTS-CT for session 125415x20190913x3T because script picking up wrong nifti file, due to an extraneous suffix (....a.nii.gz)
 
-02-11
+02-11-2021
 manually ran ANTS-CT for session 20190430-1259 (124249) because it dicom had not been converted at time of original scripted run. (also added to collection)
 
 02-18-2021
@@ -190,4 +190,7 @@ Still need to upload the previous analysis output.
 03-31-2021
 I discovered that there were 866 sessions instead of 868.
 FTDC {'106555', '110445.05'}
+(post w-score calculation so no worries for now)
 
+09-30-2021
+Added subject 106555, session 20090406 and subject 110445.05, session 20141017 to the collection.
